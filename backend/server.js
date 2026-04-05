@@ -59,7 +59,7 @@ io.on("connection", (socket) => {
 
   socket.on("message", ({ to, msg }) => {
     io.to(to).emit("message", {
-      from: users[socket.id].name, // 🔥 name instead of id
+      from: users[socket.id].name, 
       msg,
     });
   });
