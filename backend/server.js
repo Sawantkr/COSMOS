@@ -18,14 +18,12 @@ function getDistance(a, b) {
   return Math.sqrt((a.x - b.x) ** 2 + (a.y - b.y) ** 2);
 }
 
-// 🔥 random names
 const names = ["Sawant", "Tutedude", "Neha", "Riya", "Arjun", "Kiran", "Vikram"];
 
 function randomName() {
   return names[Math.floor(Math.random() * names.length)] + "_" + Math.floor(Math.random() * 100);
 }
 
-// 🔥 random color
 function randomColor() {
   return Math.floor(Math.random() * 0xffffff);
 }
